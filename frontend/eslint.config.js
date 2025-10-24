@@ -51,7 +51,7 @@ export default [
       ...jsxA11y.configs.recommended.rules,
 
       // Import hygiene
-      'import/no-unresolved': 'error',
+      'import/no-unresolved': ['error', { ignore: [] }],
       'import/named': 'error',
       'import/no-duplicates': 'warn',
 

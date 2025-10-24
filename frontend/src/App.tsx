@@ -155,7 +155,7 @@ function Board({
  * - Provides a restart button
  */
 export function App() {
-  const [squares, setSquares] = React.useState<Player[]>(Array(9).fill(null));
+  const [squares, setSquares] = React.useState<Player[]>(Array<Player>(9).fill(null));
   const [xIsNext, setXIsNext] = React.useState<boolean>(true);
 
   const winner = calculateWinner(squares);
